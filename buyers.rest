@@ -1,0 +1,36 @@
+## Get all contacts
+GET http://localhost:3000/buyers
+
+## Get single contact
+GET http://localhost:3000/buyers/67900cf7cb7b3a7172b265de
+
+## Create contact
+POST http://localhost:3000/buyers HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "req.body.firstName",
+    "lastName": "req.body.lastName",
+    "email": "req.body.email",
+    "phoneNumber": "req.body.phoneNumber",
+    "occupation": "req.body.occupation",
+    "preferredCar": "req.body.preferredCar",
+    "preferredColor": "req.body.preferredColor"
+}
+
+##Updat contact
+PUT http://localhost:3000/buyers/67900f820cef38827f399eea HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "req.body.firstName",
+    "lastName": "req.body.lastName",
+    "email": "req.body.email",
+    "phoneNumber": "req.body.phoneNumber",
+    "occupation": "req.body.occupation",
+    "preferredCar": "req.body.preferredCar",
+    "preferredColor": "req.body.preferredColor"
+}
+
+## Delete single contact
+DELETE http://localhost:3000/buyers/679aa4795e4a7df676385a2b HTTP/1.1

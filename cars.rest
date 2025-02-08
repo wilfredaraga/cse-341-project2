@@ -1,0 +1,32 @@
+## Get all contacts
+GET http://localhost:3000/cars
+
+## Get single contact
+GET http://localhost:3000/cars/67900cf7cb7b3a7172b265de
+
+## Create contact
+POST http://localhost:3000/cars HTTP/1.1
+content-type: application/json
+
+{
+    "brand": "Honda",
+    "model": "Tucson",
+    "year": "2007",
+    "color": "Black",
+    "transmission": "manual"
+}
+
+##Updat contact
+PUT http://localhost:3000/cars/67900f820cef38827f399eea HTTP/1.1
+content-type: application/json
+
+{
+    "brand": "Honda",
+    "model": "Tucson",
+    "year": "2007",
+    "color": "Black",
+    "transmission": "manual"
+}
+
+## Delete single contact
+DELETE http://localhost:3000/cars/679aa4795e4a7df676385a2b HTTP/1.1
