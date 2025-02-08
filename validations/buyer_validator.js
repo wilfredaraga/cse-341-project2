@@ -7,9 +7,11 @@ const buyerValidationRules = () => {
     body('lastName').trim().notEmpty().isLength({min:2}).withMessage('Please provide a last name'),
     body('lastName').not().isNumeric().withMessage('Numbers are not allowed'),
     
-    body('email').isEmail().withMessage('Please enter a valid email address.'),
+    body('email').isEmail().notEmpty().withMessage('Please enter a valid email address.'),
 
-    body('phoneNumber').isNumeric().withMessage('Please enter a valid phone number'),
+    body('phoneNumber').isNumeric().notEmpty().withMessage('Please enter a valid phone number'),
+
+    body('country').trim().notEmpty().withMessage('Please enter your country'),
 
     body('occupation').trim().notEmpty().isLength({min:2}).withMessage('Please enter an occupation'),
     body('occupation').not().isNumeric().withMessage('Numbers are not allowed'),

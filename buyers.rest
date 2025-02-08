@@ -2,35 +2,37 @@
 GET http://localhost:3000/buyers
 
 ## Get single contact
-GET http://localhost:3000/buyers/67900cf7cb7b3a7172b265de
+GET http://localhost:3000/buyers/67a75d140803d5caeedbc69c
 
 ## Create contact
 POST http://localhost:3000/buyers HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "req.body.firstName",
-    "lastName": "req.body.lastName",
-    "email": "req.body.email",
-    "phoneNumber": "req.body.phoneNumber",
-    "occupation": "req.body.occupation",
-    "preferredCar": "req.body.preferredCar",
-    "preferredColor": "req.body.preferredColor"
+    "firstName": "Harry",
+    "lastName": "Potter",
+    "email": "harry.potter@gmail.com",
+    "phoneNumber": "8461545468",
+    "country": "United Kingdom",
+    "occupation": "Architect",
+    "preferredCar": "Honda Civic",
+    "preferredColor": "blue"
 }
 
 ##Updat contact
-PUT http://localhost:3000/buyers/67900f820cef38827f399eea HTTP/1.1
+PUT http://localhost:3000/buyers/67a75d140803d5caeedbc69c HTTP/1.1
 content-type: application/json
 
 {
-    "firstName": "req.body.firstName",
-    "lastName": "req.body.lastName",
-    "email": "req.body.email",
-    "phoneNumber": "req.body.phoneNumber",
-    "occupation": "req.body.occupation",
-    "preferredCar": "req.body.preferredCar",
-    "preferredColor": "req.body.preferredColor"
+    "firstName": "Harry",
+    "lastName": "Potter",
+    "email": "harry.potter@gmail.com",
+    "phoneNumber": "8461545468",
+    "country": "United Kingdom",
+    "occupation": "Architect",
+    "preferredCar": "Honda Civic",
+    "preferredColor": "Pink"
 }
 
 ## Delete single contact
-DELETE http://localhost:3000/buyers/679aa4795e4a7df676385a2b HTTP/1.1
+DELETE http://localhost:3000/buyers/67a75d140803d5caeedbc69c HTTP/1.1
