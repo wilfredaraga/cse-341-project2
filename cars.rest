@@ -29,4 +29,4 @@ content-type: application/json
 }
 
 ## Delete single contact
-DELETE http://localhost:3000/cars/679aa4795e4a7df676385a2b HTTP/1.1
+DELETE http://localhost:3000/cars/67a289fb6f7b6e7ed9f514b5 HTTP/1.1
