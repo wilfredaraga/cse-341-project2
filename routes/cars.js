@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { isAuthenticated } = require ('.middleware/authenticate');
+const { isAuthenticated } = require ('../middleware/authenticate');
 
 const {carValidationRules, validate} = require('../validations/car_validator');
 const carsController = require('../controllers/cars');

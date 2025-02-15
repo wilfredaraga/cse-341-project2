@@ -5,8 +5,8 @@ const doc = {
     title: 'Cars and Buyers',
     description: 'Project 2'
   },
-  host: 'localhost:3000',
-  schemes: ['http', 'https'] 
+  host: 'cse-341-project2-xphy.onrender.com',
+  schemes: ['https'] 
 };
 
 const outputFile = './swagger.json';

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { isAuthenticated } = require ('.middleware/authenticate');
+const { isAuthenticated } = require ('../middleware/authenticate');
 
 const {buyerValidationRules, validate} = require('../validations/buyer_validator')
 const buyersController = require('../controllers/buyers');
