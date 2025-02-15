@@ -7,7 +7,7 @@ const buyersController = require('../controllers/buyers');
 
 router.get('/', buyersController.getAll);
 router.get('/:id', buyersController.getSingle);
-router.post('/', isAuthencticated, buyerValidationRules(), validate, buyersController.createBuyer);
+router.post('/', isAuthenticated, buyerValidationRules(), validate, buyersController.createBuyer);
 router.put('/:id', isAuthenticated, buyerValidationRules(), validate, buyersController.updateBuyer);
 router.delete('/:id', isAuthenticated, buyersController.deleteBuyer);
 
